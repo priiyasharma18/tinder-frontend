@@ -1,0 +1,82 @@
+.nav-parent{
+    width:100%;
+    height:13vh;
+    position: fixed;
+    top:0;
+    background: linear-gradient(to bottom, #000000, #2e2d2d);
+    z-index: 1000;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+
+    
+}
+
+.nav-left{
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-left .logo{
+    height:80%;
+    width:20vw;
+    margin-left: 25px;
+    padding:10px;
+}
+.nav-left .logo .text{
+    font-family: 'Poppins', Arial, sans-serif; /* Fallback options */
+    font-weight: 700; /* Heavy font weight */
+    font-size: 48px; /* Adjust as needed */
+    letter-spacing: -0.02em; /* Slightly tighten spacing */
+    color: #fff;
+    
+}
+.nav-right{
+    width:30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100%;
+   
+}
+.nav-right .nav-item {
+
+}
+
+.nav-right .about{
+    font-family: 'Poppins', Arial, sans-serif; /* Fallback options */
+    font-size: 1.5rem; /* Adjust as needed */
+    letter-spacing: -0.02em; /* Slightly tighten spacing */
+   color:#fff;
+   
+}
+
+.nav-right .about:hover{
+    font-family: 'Poppins', Arial, sans-serif; /* Fallback options */
+    font-size: 1.5rem; /* Adjust as needed */
+    letter-spacing: -0.02em; /* Slightly tighten spacing */
+   color:rgb(167, 48, 48);
+   text-decoration: underline;
+}
+.nav-right .nav-item .login{
+    background-color:#fff ; /* Tinder gradient */
+    color: black; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 50px; /* Rounded button */
+    padding: 10px 20px; /* Button size */
+    font-size: 25px; /* Text size */
+    font-weight: bold; /* Bold text */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth animations */
+}
+.nav-right .nav-item .login:hover{
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */ 
+}
+.nav-right .nav-item .login:active{
+    transform: scale(0.95); /* Pressed effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
