@@ -47,6 +47,18 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
    
 }
+.landing-child span{
+    margin:10px;
+    font:200
+}
+.landing-child span .link:hover{
+color:#fd267d
+}
+.landing-child span .link{
+    text-decoration: none;
+    color:#fff;
+    
+ }
 .landing-main .landing-child .hero-btn .link{
     text-decoration: none;
     color:#fff
