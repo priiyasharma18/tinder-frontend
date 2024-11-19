@@ -1,0 +1,71 @@
+.signup-main{
+    width:100%;
+    height:100vh;
+    position: fixed;
+    top:13vh;
+    border:1px solid gray;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(235, 134, 206, 0.5), rgba(221, 187, 214, 0.5))
+}
+.signup-main .signup-left{
+width: 30%;
+height:60vh;
+border:1px solid pink;
+background-image: linear-gradient(rgba(237, 112, 202, 0.5), rgba(230, 200, 224, 0.5)), url('http://localhost:3000/image/signup.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+box-shadow: 0 4px 10px rgba(255, 20, 147, 0.6);
+}
+.signup-main .signup-right{
+    width: 30vw;
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border:1px solid pink;
+    box-shadow: 0 4px 10px rgba(255, 20, 147, 0.6);
+}
+.signup-main .signup-left {
+    width:30vw;
+    font-family: 'Poppins', Arial, sans-serif; /* Fallback options */
+    font-weight: 700; /* Heavy font weight */
+    font-size: 48px; /* Adjust as needed */
+    letter-spacing: -0.02em; /* Slightly tighten spacing */
+    color: #8a0460;
+    
+}
+.signup-main .signup-right div input{
+    width:25vw;  /* Full width of form */
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.signup-main .signup-right div input:focus{
+    border-color: #63104d; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px  #63104d; 
+}
+.signup-main .signup-right .signup-child button{
+    background: linear-gradient(90deg, #ff7854, #fd267d); /* Tinder gradient */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded button */
+    padding: 10px 20px; /* Button size */
+    font-size: 20px; /* Text size */
+    font-weight: bold; /* Bold text */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.signup-main .signup-right .signup-child button:hover{
+    background: linear-gradient(90deg, #d85e3d, #af1a56);
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}

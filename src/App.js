@@ -4,6 +4,7 @@ import Landing from "./component/landing/landing";
 import Navbar from "./component/navbar/navbar";
 import Nav from './component/navbar/navbar2';
 import Login from './component/login/login';
+import Signup from './component/signup/signup';
 
 function App() {
   return (
@@ -13,13 +14,14 @@ function App() {
         <Routes>
           <Route path='/' element={<Navbar/>}></Route>
           <Route path='/login' element={<Nav/>}></Route>
+          <Route path='/signup' element={<Nav/>}></Route>
         </Routes>
 
         <Routes>
 
           <Route path='/' element={<Landing />}></Route>
           <Route path='/login' element={<Login/>}></Route>
-
+          <Route path='/signup' element={<Signup/>}></Route>
         </Routes>
 
       </BrowserRouter>
