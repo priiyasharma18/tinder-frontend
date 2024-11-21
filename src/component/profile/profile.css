@@ -1,0 +1,174 @@
+.profile-main{
+    width:100%;
+    height:fit-content;
+    position:relative;
+    top:13vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border:2px solid  blue */
+}
+
+.profile-main .profile-child{
+    width:80%;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* border:2px solid green */
+}
+.head{
+    font-size: 35px;
+ font-weight: 500;
+ padding-top: 15px;
+}
+.profile-main .profile-child .pro-items{
+    width:50%;
+    height: fit-content;
+    padding:4vmax;
+    
+    /* border:2px solid  orange */
+   
+}
+.profile-main .profile-child .pro-items{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: space-around;
+    align-items:flex-start;
+ 
+}
+
+.pro-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2px;
+    
+}
+.pro-child label{
+ font-size: 18px;
+ font-weight: 300;
+ padding-bottom: 15px;
+}
+.pro-child input{
+    width:28vw;
+    height:6vh;
+    border:1px solid rgb(182, 181, 181);
+    border-radius: 5px;
+    background-color: #f1f0f0;
+    padding:5px;
+    font-size: 18px;
+}
+.pro-child input:focus{
+    outline: none;
+    border:2px solid rgb(255, 74, 47) ; 
+}
+.pro-child input:hover{
+    background-color: rgb(241, 236, 236); 
+}
+.pro-child textarea:focus{
+    outline: none;
+    border:2px solid rgb(255, 74, 47) ; 
+}
+.pro-child textarea:hover{
+    background-color: rgb(241, 236, 236);   
+}
+.pro-child textarea{
+    width:28vw;
+    height:6vh;
+    border:1px solid rgb(182, 181, 181);
+    border-radius: 5px;
+    background-color: #f1f0f0; 
+    padding:5px;
+    font-size: 18px;
+}
+.pro-child .gender{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.pro-child .gender .gen-opt{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.pro-child .gender .label{
+    font-size: 18px;
+ font-weight: 300;
+ padding-bottom: 15px; 
+}
+.pro-child .gender .gen-opt button{
+    width:10vw;
+    height:6vh;
+    border:1px solid rgb(182, 181, 181) ;
+    padding:1vmax;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size:16px;
+    font-weight: 300;
+    margin-right: 10px;
+    
+
+}
+.pro-child .gender .gen-opt button:focus{
+    border:2px solid rgb(255, 74, 47) ;  
+}
+.pro-child .gender .gen-opt button:hover{
+    background-color: rgb(241, 236, 236);
+}
+.pro-items .image-section {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.pro-items .image-section label{
+    font-size: 18px;
+ font-weight: 300;
+ padding-bottom: 15px;  
+}
+.pro-items .image-section input{
+    outline: none;
+    height: 3vh;
+    border:1px solid rgb(182, 181, 181);
+    background-color: #fff; 
+}
+
+.pro-items .image-section img:hover{
+border:1px solid rgb(255, 74, 47) 
+}
+.pro-items .image-section .img-sec{
+    padding:2vmax;
+    display: flex;
+    flex-wrap: wrap;
+}
+.submitbtn{
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: center;
+}
+.sub-btn{
+    background: linear-gradient(90deg, #ff7854, #fd267d); /* Tinder gradient */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded button */
+    padding: 10px 20px; /* Button size */
+    font-size: 20px; /* Text size */
+    font-weight: bold; /* Bold text */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.sub-btn:hover{
+    background: linear-gradient(90deg, #d85e3d, #af1a56);
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
