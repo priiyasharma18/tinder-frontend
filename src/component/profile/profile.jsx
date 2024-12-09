@@ -1,6 +1,8 @@
 import React from "react";
 import './profile.css';
 import { useState } from "react";
+import {Link} from 'react-router-dom'
+
 const Profile = () => {
 
     const [urls, setUrl] = useState([])
@@ -137,7 +139,7 @@ const Profile = () => {
                                 }
                             </div>
                             <div className="submitbtn">
-            <button className="sub-btn" > Continue</button>
+          <Link to='/feed' >   <button className="sub-btn" > Continue</button></Link>
             </div>
 
                         </div>

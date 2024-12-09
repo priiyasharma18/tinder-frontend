@@ -1,0 +1,287 @@
+
+.feed{
+    width:100%;
+    height:100vh;
+    border:2px solid red;
+    position: fixed;
+    top:13vh;
+    display: flex;
+
+}
+
+.feed .feed-left{
+width:30%;
+height:100%;
+border:2px solid blue
+}
+
+.feed .feed-right{
+    width:70%;
+    height:100%;
+    border:2px solid rgb(64, 255, 0)
+}
+
+.feed .feed-left .user-side{
+    width:100%;
+    height:10vh;
+    border:1px solid rgb(85, 85, 11);
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #ff7854, #fd267d);
+}
+
+.feed .feed-left .user-side .user-left{
+    width:fit-content;
+    height:100%;
+    display: flex;
+    align-items: center;
+    padding:2vmax
+}
+.feed .feed-left .user-side .user-left img{
+    width:50px;
+    height:50px;
+    border-radius: 50px;
+    margin-right: 2px;
+}
+.feed .feed-left .user-side .user-left span{
+    font-size: 18px;
+    color:#fff;
+    padding:2px;
+    font-weight: bold;
+
+}
+.feed .feed-left .user-side .user-right{
+    width:20%;
+    height:100%;
+   /* // border:2px solid rgb(29, 113, 165); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(90deg, #ff7854, #fd267d); /* Tinder gradient */
+}
+.feed .feed-left .user-side .user-right .three-bar{
+    height: 55px;
+    width:25px;
+    color:#fff;
+}
+.feed .feed-left .user-side .user-right .three-bar:hover{
+    color:#010101;
+    
+}
+.update-section{
+    display: flex;
+    justify-content: space-around;
+    border: #fd267d;
+}
+.update-section .matches{
+width:50%;
+height:fit-content;
+padding:1vmax;
+display: flex;
+justify-content: center;
+font-size: 18px;
+font-weight: bold;
+
+}
+.update-section .matches:hover{
+    border-bottom: 4px solid rgb(222, 52, 109);
+    color:#fd267d
+}
+
+.update-section .request{
+    width:50%;
+    height:fit-content;
+    padding:1vmax;
+    display: flex;
+justify-content: center;
+font-size: 18px;
+font-weight: bold;
+}
+.update-section .request:hover{
+    border-bottom: 4px solid rgb(222, 52, 109);
+    color:#fd267d
+}
+
+/* .feed-right {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.feed-right .feed-img{
+    width:40%;
+    height: 75vh;
+    border:3px solid #fd267d;
+
+} */
+
+/* .feed-right .feed-function{
+    width:40%;
+    height: 25vh;
+    border:3px solid #37071a;
+} */
+
+/* just for trial purpose */
+
+.feed-right{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    min-height: fit-content;
+    margin: 0;
+    padding:1vmax;
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+}
+.card-container {
+    position: absolute;
+    width: 360px;
+    height: 600px;
+  }
+  .card-container .image-container{
+    position: relative; /* Allows child elements to position relative to this */
+    width: 100%;       /* Adjust as needed *//* Optional, for controlling the width */
+    height: 100%; 
+  }
+  .image-container img {
+    width: 100%;       /* Make image responsive */
+    height: 100%;    /* Ensures no extra spacing below the image */
+    border-radius: 30px; /* Optional for aesthetics */
+  }
+
+  .text-section {
+  position: absolute;
+  top:65%;
+  /* border: 1px solid white; */
+  width:100%;
+ flex-wrap: wrap;
+  padding:1vmax;
+  color: #f3f3f3;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  border-radius: 30px;
+  }
+  .text-section .name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px
+  }
+
+  .text-section .name .inner-name{
+font:700 2vmax "Poppins", sans-serif;
+gap:10px
+  }
+  .text-section .name .age{
+    font:500 2vmax "Poppins", sans-serif;
+  }
+  .text-section .bio{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px
+   
+  }
+  .text-section .bio .bio-icon svg{
+    font-size: 1.5vmax;
+  }
+  .text-section .bio .inner-bio{
+    font:600 1.2vmax "Poppins",sans-serif;
+  }
+  .text-section .location{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px
+  }
+  .text-section .location .loc-img svg{
+    font-size: 1.5vmax;
+  }
+  .text-section .location .loc{
+    font:500 1.2vmax "Poppins",sans-serif;
+  }
+  .text-section .feature{
+    width:100%;
+    display: flex;
+    padding:1.5vmax;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .text-section .feature .reject .rej-btn{
+    background: linear-gradient(90deg, #e84518, #e84518); /* Tinder gradient */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded button */
+    padding: 10px 25px; /* Button size */
+    font-size: 20px; /* Text size */
+    font-weight: bold; /* Bold text */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .text-section .feature .accept .acc-btn{
+    background: linear-gradient(90deg, #529b54, #529b54); /* Tinder gradient */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded button */
+    padding: 10px 25px; /* Button size */
+    font-size: 20px; /* Text size */
+    font-weight: bold; /* Bold text */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+
+
+  .card:nth-child(1) {
+    z-index: 5;
+    background-color: #fd267d;
+    /* Reduce opacity */
+  }
+
+  .card:nth-child(2) {
+    z-index: 3;
+    transform: scale(0.95);
+    background-color: #ff7854;
+  }
+
+  .card:nth-child(3) {
+    z-index: 3;
+    transform: scale(0.9);
+    background-color: aqua;
+  }
+  
+  .card:nth-child(4) {
+    z-index: 2;
+    transform: scale(0.9);
+    background-color: rgb(145, 38, 174);
+  }
+  .card:nth-child(5) {
+    z-index: 1;
+    transform: scale(0.9);
+    background-color: aqua;
+  }
+
+  /* .card-container:active .card:nth-child(1) {
+    transform: translateX(-70%) rotate(20deg);
+    opacity: 0;
+  } */
+  .swiped{
+    transform: translateX(-120%) rotate(20deg);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
